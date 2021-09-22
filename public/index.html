@@ -52,12 +52,11 @@
             <ul>
 
               <p> <a v-bind:href = "result.picture.large"> <img v-bind:src = "result.picture.large"/></a></p>
-              <p> Name: {{result.name.first+" "+result.name.last}}</a></p>
-              <p> Country Origin: {{result.location.country}}</a></p>
+              <p> Full Name: {{result.name.first+" "+result.name.last}}</a></p>
+              <p> Country of Origin: {{result.location.country}}</a></p>
               <p> Date of Birth: {{prettyBirthday}}</a></p>
               <p> Age: {{result.dob.age}}</a></p>
-              <p> Email: {{result.email}}</a></p>
-              <p> <a href="mailto:someone@yoursite.com">Email Us</a></p>
+              <p> <a href="mailto:someone@yoursite.com"> Email: {{result.email}}</a></p>
             </ul> 
             <h1>Hello, world!</h1>
             <!-- <p> {{person.name.first}} {{person.name.last}} </p>
